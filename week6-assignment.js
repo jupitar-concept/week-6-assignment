@@ -50,9 +50,7 @@ console.log("After Increment (++):", totalScore);
 let remainder = totalScore % 7;
 console.log("Remainder when divided by 7:", remainder);
 
-
-
-// TASK 3: Type Conversion 
+// TASK 3: Type Conversion
 // Student data received as strings (or wrong types)
 let studentAge = "19";
 let examScore = "74.5";
@@ -85,9 +83,7 @@ console.log("Student Name:", studentName, "| Type:", typeof studentName);
 let hasPassed = examScore > passMark;
 console.log("Exam Score > Pass Mark:", hasPassed);
 
-
-
-// TASK 4: Conditional Statements
+// TASK 4A: Conditional Statements
 function getGrade(score) {
   if (score >= 70) {
     console.log("Score: " + score + " | Grade: A — Distinction");
@@ -106,3 +102,54 @@ function getGrade(score) {
 getGrade(73);
 getGrade(58);
 getGrade(35);
+
+
+// Task 4B — Switch Statement (Month Names)
+
+function getMonthName(month) {
+  switch (month) {
+    case 1:
+      console.log("1 - January");
+      break;
+    case 2:
+      console.log("2 - February");
+      break;
+    case 3:
+      console.log("3 - March");
+      break;
+    case 4:
+      console.log("4 - April");
+      break;
+    case 5:
+      console.log("5 - May");
+      break;
+    case 6:
+      console.log("6 - June");
+      break;
+    case 7:
+      console.log("7 - July");
+      break;
+    case 8:
+      console.log("8 - August");
+      break;
+    case 9:
+      console.log("9 - September");
+      break;
+    case 10:
+      console.log("10 - October");
+      break;
+    case 11:
+      console.log("11 - November");
+      break;
+    case 12:
+      console.log("12 - December");
+      break;
+    default:
+      console.log("Invalid month number");
+  }
+}
+
+// Test cases
+getMonthName(1);
+getMonthName(7);
+getMonthName(15); // invalid test
