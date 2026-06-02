@@ -84,3 +84,25 @@ console.log("Student Name:", studentName, "| Type:", typeof studentName);
 // Check if examScore is greater than passMark
 let hasPassed = examScore > passMark;
 console.log("Exam Score > Pass Mark:", hasPassed);
+
+
+
+// TASK 4: Conditional Statements
+function getGrade(score) {
+  if (score >= 70) {
+    console.log("Score: " + score + " | Grade: A — Distinction");
+  } else if (score >= 60) {
+    console.log("Score: " + score + " | Grade: B — Merit");
+  } else if (score >= 50) {
+    console.log("Score: " + score + " | Grade: C — Pass");
+  } else if (score >= 40) {
+    console.log("Score: " + score + " | Grade: D — Near Pass");
+  } else {
+    console.log("Score: " + score + " | Grade: F — Fail");
+  }
+}
+
+// Test cases
+getGrade(73);
+getGrade(58);
+getGrade(35);
